@@ -1,6 +1,7 @@
 package groovy;
 
 import java.sql.*;
+/*
 import jenkins.model.*;
 import org.codehaus.groovy.runtime.DefaultGroovyMethods;
 import java.util.regex.Matcher;
@@ -17,7 +18,7 @@ import groovy.net.*;
 import hudson.model.*
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
+import java.sql.SQLException;*/
 
 def connect()
 {/*
