@@ -1,4 +1,4 @@
-import java.sql.Connection;
+/*import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
@@ -18,6 +18,17 @@ public Connection connect()
 
     return conn;
 }
+*/
 
+import java.sql.*;
+
+def connect()
+{
+    Class.forName("org.postgresql.Driver");
+    Connection con=DriverManager.getConnection("jdbc:postgresql://postgresql:5432/deneme","root","root");
+    Statement stmt=con.createStatement();
+    ResultSet rs=stmt.executeQuery("select * from accounts");
+    con.close();
+}
 
 return this;
